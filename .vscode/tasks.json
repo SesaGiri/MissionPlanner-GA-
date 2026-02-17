@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-garuda-ops-msbuild",
+      "type": "process",
+      "command": "msbuild",
+      "args": [
+        "${workspaceFolder}/MissionPlanner.sln",
+        "/t:Build",
+        "/p:Configuration=Debug"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    },
+    {
+      "label": "build-garuda-ops-dotnet",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/MissionPlanner.csproj",
+        "-c",
+        "Debug"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

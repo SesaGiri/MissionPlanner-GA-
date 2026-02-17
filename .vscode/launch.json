@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Garuda Ops (.NET Framework clr)",
+      "type": "clr",
+      "request": "launch",
+      "preLaunchTask": "build-garuda-ops-msbuild",
+      "program": "${workspaceFolder}/bin/Debug/net461/MissionPlanner.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Garuda Ops (.NET coreclr fallback)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-garuda-ops-dotnet",
+      "program": "${workspaceFolder}/bin/Debug/net461/MissionPlanner.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}

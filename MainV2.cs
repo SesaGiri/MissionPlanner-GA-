@@ -1083,6 +1083,9 @@ namespace MissionPlanner
             if (Program.Logo2 != null)
                 MenuArduPilot.Image = Program.Logo2;
 
+            MenuArduPilot.Text = "Garuda Aerospace";
+            MenuArduPilot.ToolTipText = "Open Garuda Aerospace";
+
             Application.DoEvents();
 
             Comports.Add(comPort);
@@ -4661,11 +4664,11 @@ namespace MissionPlanner
         {
             try
             {
-                System.Diagnostics.Process.Start("https://ardupilot.org/?utm_source=Menu&utm_campaign=MP");
+                System.Diagnostics.Process.Start("https://www.garudaaerospace.com/");
             }
             catch
             {
-                CustomMessageBox.Show("Failed to open url https://ardupilot.org");
+                CustomMessageBox.Show("Failed to open url https://www.garudaaerospace.com/");
             }
         }
 
